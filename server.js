@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 
 // MongoDB Atlas URI (replace with your own connection string)
-//const MONGO_URI = 'mongodb+srv://:@cluster0.h1vq3so.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const MONGO_URI = process.env.MONGO_URI;
 
 const app = express();
 app.use(cors());
